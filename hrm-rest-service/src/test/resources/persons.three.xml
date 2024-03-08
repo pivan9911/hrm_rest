@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <name>Harald</name>
+        <gender>m</gender>
+        <age>23</age>
+    </person>
+    <person>
+        <name>Diana</name>
+        <gender>f</gender>
+        <age>30</age>
+    </person>
+    <person>
+        <name>Franz</name>
+        <gender>m</gender>
+        <age>33</age>
+    </person>
+</persons>

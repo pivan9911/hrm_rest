@@ -1,0 +1,19 @@
+
+
+
+<!-- 
+
+curl -X GET --header "content-type: text/xml"  http://localhost:8080/persons
+
+curl -X POST --header "content-type: text/xml" -d @./src/test/resources/persons.Georg.xml  http://localhost:8080/persons/add
+
+curl -X DELETE --header "content-type: text/xml" -d @./src/test/resources/persons.Georg.xml  http://localhost:8080/persons/delete
+
+
+curl -X POST --header "content-type: text/xml" -d @./src/test/resources/persons.three.xml  http://localhost:8080/persons/add
+
+curl -X GET --header "content-type: text/xml"  http://localhost:8080/persons
+
+
+-->
+
