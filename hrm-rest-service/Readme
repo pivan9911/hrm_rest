@@ -1,19 +1,29 @@
 
+Start the hrm-rest-service application,  in IDE, or at command-line as Spring-boot, (mvn spring-boot:run)
+
+Three REST calls are implemented, see here below
 
 
-<!-- 
-
+# view all Persons
 curl -X GET --header "content-type: text/xml"  http://localhost:8080/persons
 
+# Add Person
 curl -X POST --header "content-type: text/xml" -d @./src/test/resources/persons.Georg.xml  http://localhost:8080/persons/add
 
-curl -X DELETE --header "content-type: text/xml" -d @./src/test/resources/persons.Georg.xml  http://localhost:8080/persons/delete
-
-
-curl -X POST --header "content-type: text/xml" -d @./src/test/resources/persons.three.xml  http://localhost:8080/persons/add
-
+# view all Persons
 curl -X GET --header "content-type: text/xml"  http://localhost:8080/persons
 
 
--->
+#Delete person
+curl -X DELETE --header "content-type: text/xml" -d @./src/test/resources/persons.Georg.xml  http://localhost:8080/persons/delete
+
+# Add Three
+curl -X POST --header "content-type: text/xml" -d @./src/test/resources/persons.three.xml  http://localhost:8080/persons/add
+
+# view all Persons
+curl -X GET --header "content-type: text/xml"  http://localhost:8080/persons
+
+
+# view statistics
+curl -X GET --header "content-type: text/xml"  http://localhost:8080/persons/statistics
 
